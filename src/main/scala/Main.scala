@@ -5,3 +5,11 @@ object Main {
   val v4: Option[Int] = Some(7)
   val v5: Option[Int] = Some(11)
 }
+
+/* REPL
+for { i1 <- Main.v1
+      i2 <- Main.v2
+      i3 <- Main.v3
+      i4 <- Main.v4
+      i5 <- Main.v5} yield i1 * i2 * i3 * i4* i5
+ */
